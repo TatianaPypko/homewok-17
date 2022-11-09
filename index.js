@@ -12,7 +12,7 @@ const numbers = [
 //     }
 //     return accum;
 //   },
-//   { sumPairedNumbers: 0, amountPairedNumbers: 0}
+//   { sumPairedNumbers: 0, amountPairedNumbers: 0 }
 // );
 // console.log(pairedNumbers);
 
@@ -20,9 +20,10 @@ const numbers = [
 // const dataResult = numbers.reduce(
 //   (accum, number, index, arr) => {
 //     accum.minNumber = Math.min(accum.minNumber, number);
-//     accum.oderNumber = numbers.indexOf(accum.minNumber) + 1;
+//     accum.oderNumber = numbers.indexOf(accum.minNumber);
 //     return accum;
-//   }, { minNumber: 0, oderNumber: 0 }
+//   },
+//   { minNumber: 0, oderNumber: 0 }
 // );
 // console.log(dataResult);
 
@@ -30,9 +31,10 @@ const numbers = [
 // const maxNumberAndOrder = numbers.reduce(
 //   (accumulator, number, index, arr) => {
 //     accumulator.maxNumber = Math.max(accumulator.maxNumber, number);
-//     accumulator.orderMaxNumber = arr.indexOf(accumulator.maxNumber) + 1;
+//     accumulator.orderMaxNumber = arr.indexOf(accumulator.maxNumber);
 //     return accumulator;
-//   }, { maxNumber: 0, orderMaxNumber: 0 }
+//   },
+//   { maxNumber: 0, orderMaxNumber: 0 }
 // );
 // console.log(maxNumberAndOrder);
 
@@ -97,5 +99,5 @@ const numbers = [
 
 // Ten
 // const maxNumber = Math.max(...numbers);
-// const result = numbers.map(number => number === maxNumber ? number : 0);
-//  console.log(result);
+// const result = numbers.map((number) => (number === maxNumber ? number : 0));
+// console.log(result);
